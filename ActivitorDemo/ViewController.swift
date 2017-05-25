@@ -7,19 +7,33 @@
 //
 
 import UIKit
+import SVProgressHUD
+
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+     
+        
+        
+        
+    let hud = MBProgressHUD.showAdded(to: self.view, animated: true)
+        
+        hud.contentColor = UIColor.white
+        
+        hud.label.text = "loading.."
+        hud.detailsLabel.text = "Please wait"
+        hud.bezelView.backgroundColor = UIColor.black
+       
+        
+
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+   
 
 }
 

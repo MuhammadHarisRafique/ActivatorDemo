@@ -12,9 +12,12 @@
 		4DF4C4D71ED6BE820074FD63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF4C4D51ED6BE820074FD63 /* Main.storyboard */; };
 		4DF4C4D91ED6BE820074FD63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF4C4D81ED6BE820074FD63 /* Assets.xcassets */; };
 		4DF4C4DC1ED6BE820074FD63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF4C4DA1ED6BE820074FD63 /* LaunchScreen.storyboard */; };
+		4DF4C4E61ED6BE910074FD63 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF4C4E51ED6BE910074FD63 /* MBProgressHUD.m */; };
+		A92AB4E7B7CEE5DADDB1373C /* Pods_ActivitorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAAF98C69E9E0EB24425CCB0 /* Pods_ActivitorDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0712BED63A6351187E9C62C0 /* Pods-ActivitorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivitorDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ActivitorDemo/Pods-ActivitorDemo.release.xcconfig"; sourceTree = "<group>"; };
 		4DF4C4CE1ED6BE820074FD63 /* ActivitorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActivitorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DF4C4D11ED6BE820074FD63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DF4C4D31ED6BE820074FD63 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,11 @@
 		4DF4C4D81ED6BE820074FD63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DF4C4DB1ED6BE820074FD63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DF4C4DD1ED6BE820074FD63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF4C4E31ED6BE900074FD63 /* ActivitorDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ActivitorDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DF4C4E41ED6BE910074FD63 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4DF4C4E51ED6BE910074FD63 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		87A2BC594F21F2940A718BF6 /* Pods-ActivitorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ActivitorDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ActivitorDemo/Pods-ActivitorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DAAF98C69E9E0EB24425CCB0 /* Pods_ActivitorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ActivitorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92AB4E7B7CEE5DADDB1373C /* Pods_ActivitorDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		449D841F5F66FEBB0B0DCF4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87A2BC594F21F2940A718BF6 /* Pods-ActivitorDemo.debug.xcconfig */,
+				0712BED63A6351187E9C62C0 /* Pods-ActivitorDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4DF4C4C51ED6BE820074FD63 = {
 			isa = PBXGroup;
 			children = (
 				4DF4C4D01ED6BE820074FD63 /* ActivitorDemo */,
 				4DF4C4CF1ED6BE820074FD63 /* Products */,
+				449D841F5F66FEBB0B0DCF4F /* Pods */,
+				7ADC1AEA18758893889D5B7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +76,23 @@
 			children = (
 				4DF4C4D11ED6BE820074FD63 /* AppDelegate.swift */,
 				4DF4C4D31ED6BE820074FD63 /* ViewController.swift */,
+				4DF4C4E41ED6BE910074FD63 /* MBProgressHUD.h */,
+				4DF4C4E51ED6BE910074FD63 /* MBProgressHUD.m */,
 				4DF4C4D51ED6BE820074FD63 /* Main.storyboard */,
 				4DF4C4D81ED6BE820074FD63 /* Assets.xcassets */,
 				4DF4C4DA1ED6BE820074FD63 /* LaunchScreen.storyboard */,
 				4DF4C4DD1ED6BE820074FD63 /* Info.plist */,
+				4DF4C4E31ED6BE900074FD63 /* ActivitorDemo-Bridging-Header.h */,
 			);
 			path = ActivitorDemo;
+			sourceTree = "<group>";
+		};
+		7ADC1AEA18758893889D5B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAAF98C69E9E0EB24425CCB0 /* Pods_ActivitorDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DF4C4E01ED6BE820074FD63 /* Build configuration list for PBXNativeTarget "ActivitorDemo" */;
 			buildPhases = (
+				BA55568C5D7F69A6C77344B7 /* [CP] Check Pods Manifest.lock */,
 				4DF4C4CA1ED6BE820074FD63 /* Sources */,
 				4DF4C4CB1ED6BE820074FD63 /* Frameworks */,
 				4DF4C4CC1ED6BE820074FD63 /* Resources */,
+				F9A8C2639686C343F1DB6FB3 /* [CP] Embed Pods Frameworks */,
+				B5C8BDDAEC0B98AFAAEE47C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +131,7 @@
 					4DF4C4CD1ED6BE820074FD63 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 8GWSL85966;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,12 +167,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B5C8BDDAEC0B98AFAAEE47C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivitorDemo/Pods-ActivitorDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA55568C5D7F69A6C77344B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9A8C2639686C343F1DB6FB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ActivitorDemo/Pods-ActivitorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DF4C4CA1ED6BE820074FD63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4DF4C4D41ED6BE820074FD63 /* ViewController.swift in Sources */,
+				4DF4C4E61ED6BE910074FD63 /* MBProgressHUD.m in Sources */,
 				4DF4C4D21ED6BE820074FD63 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,26 +345,33 @@
 		};
 		4DF4C4E11ED6BE820074FD63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A2BC594F21F2940A718BF6 /* Pods-ActivitorDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8GWSL85966;
 				INFOPLIST_FILE = ActivitorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HigherVisibility.ActivitorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActivitorDemo/ActivitorDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4DF4C4E21ED6BE820074FD63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0712BED63A6351187E9C62C0 /* Pods-ActivitorDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8GWSL85966;
 				INFOPLIST_FILE = ActivitorDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HigherVisibility.ActivitorDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ActivitorDemo/ActivitorDemo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
